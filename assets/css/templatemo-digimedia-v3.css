@@ -365,6 +365,10 @@ header
   line-height: 80px;
 }
 
+.logo-text{
+  font-size: 100px;
+}
+
 .background-header .main-nav .nav {
   margin-top: 20px !important;
 }
