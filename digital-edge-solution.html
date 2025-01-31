@@ -664,6 +664,7 @@ https://templatemo.com/tm-568-digimedia
                                 <!-- Hidden input for reCAPTCHA token -->
                                 <input style="margin: 10%;" type="hidden" name="recaptcha_response" id="recaptchaResponse">
                                 <fieldset>
+                                  <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                                     <button type="submit" name="send" id="form-submit" class="main-button">Send Message Now</button>
                                 </fieldset>
                             </div>
@@ -743,7 +744,7 @@ https://templatemo.com/tm-568-digimedia
   
 </footer>
 <script>
-  document.getElementById('contact').addEventListener('submit', function (event) {
+  document.getElementById('form-submit').addEventListener('submit', function (event) {
       event.preventDefault(); // Prevent form submission
 
       // Execute reCAPTCHA
@@ -753,7 +754,7 @@ https://templatemo.com/tm-568-digimedia
               document.getElementById('recaptchaResponse').value = token;
 
               // Submit the form
-              document.getElementById('contact').submit();
+              document.getElementById('form-submit').submit();
           });
       });
   });
